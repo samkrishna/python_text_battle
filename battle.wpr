@@ -31,12 +31,19 @@ console.toolbox = [{'autosave': False,
                     'pseudo_tty': False,
                     'raise_panel': True,
                     'title': None}]
+proj.directory-list = [{'dirloc': loc('tests'),
+                        'excludes': (),
+                        'filter': u'*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True}]
 proj.file-list = [loc('classes/game.py'),
                   loc('classes/inventory.py'),
                   loc('classes/magic.py'),
+                  loc('classes/unnecessary_math.py'),
                   loc('classes/__init__.py')]
 proj.file-type = 'shared'
 proj.launch-config = {loc('classes/game.py'): ('custom',
         (u'',
          'launch-oaY8KWhd5F2mRmWM'))}
-proj.main-file = loc('main.py')
+proj.main-file = loc('../../../../../../${WING:PROJECT_DIR}/main.py')
